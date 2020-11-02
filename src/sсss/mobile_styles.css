@@ -1,0 +1,395 @@
+@font-face {
+  font-family: "Avenir-Light";
+  src: url("../fonts/Avenir-Light.otf");
+}
+@font-face {
+  font-family: "Avenir-Regular";
+  src: url("../fonts/Avenir-Regular.otf");
+}
+@font-face {
+  font-family: "Avenir-Medium";
+  src: url("../fonts/Avenir-Medium.otf");
+}
+@font-face {
+  font-family: "Avenir-SemiBold";
+  src: url("../fonts/Avenir-SemiBold.otf");
+}
+@font-face {
+  font-family: "Avenir-Bold";
+  src: url("../fonts/Avenir-Bold.otf");
+}
+html, body {
+  position: relative;
+  width: 100%;
+  min-width: 100vw;
+  height: 100%;
+  min-height: 10px;
+  font-family: "Avenir-Regular";
+  color: #212353;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a {
+  color: #212353;
+}
+
+b {
+  font-weight: bold;
+}
+
+img {
+  display: block;
+}
+
+input::-webkit-input-placeholder {
+  opacity: 1;
+  color: #212353;
+  font-size: 1.6rem;
+  transition: opacity 0.3s ease;
+}
+
+input::-moz-placeholder {
+  opacity: 1;
+  color: #212353;
+  font-size: 1.6rem;
+  transition: opacity 0.3s ease;
+}
+
+input:-moz-placeholder {
+  opacity: 1;
+  color: #212353;
+  font-size: 1.6rem;
+  transition: opacity 0.3s ease;
+}
+
+input:-ms-input-placeholder {
+  opacity: 1;
+  color: #212353;
+  font-size: 1.6rem;
+  transition: opacity 0.3s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  color: #212353;
+  font-size: 1.6rem;
+  transition: opacity 0.3s ease;
+}
+
+input:focus::-moz-placeholder {
+  opacity: 0;
+  color: #212353;
+  font-size: 1.6rem;
+  transition: opacity 0.3s ease;
+}
+
+input:focus:-moz-placeholder {
+  opacity: 0;
+  color: #212353;
+  font-size: 1.6rem;
+  transition: opacity 0.3s ease;
+}
+
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  color: #212353;
+  font-size: 1.6rem;
+  transition: opacity 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+}
+
+#searchField {
+  padding-left: 1vmin;
+  font-size: 4vmin;
+  color: #212353;
+  width: 100%;
+  border: none;
+  height: 17vmin;
+  background: transparent;
+  resize: none;
+  transition: all .4s ease-out;
+}
+
+.header_m {
+  position: absolute;
+  top: 5vmin;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header_wr_m {
+  width: 87vmin;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_log_m {
+  width: 9vmin;
+  height: 7vmin;
+}
+
+.header_log_m img {
+  width: 100%;
+  height: 100%;
+}
+
+.header_right_search_m {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 27px;
+}
+
+.header_right_search_m svg {
+  width: 100%;
+  height: 100%;
+}
+
+.search_field_wr_m {
+  position: absolute;
+  left: -2vmin;
+  bottom: -1vmin;
+  transform: translateX(-100%);
+  width: 40vmin;
+  height: 1px;
+  background: #9C69E2;
+  transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 0;
+}
+
+.cliked .search_field_wr_m {
+  opacity: 1;
+}
+
+.search_field_m {
+  position: absolute;
+  bottom: -5vmin;
+  right: 0;
+  font-size: 4vmin;
+}
+
+.header_right_menu_m {
+  width: 28px;
+  height: 20px;
+  z-index: 1;
+}
+
+.header_right_wr_m {
+  display: flex;
+}
+
+.header_right_menu_m {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu_line {
+  width: 100%;
+  height: 2px;
+  background: #9C69E2;
+  transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.menu_visible .menu_line_1 {
+  transform: rotate(45deg) translate(23%, 317%);
+}
+
+.menu_visible .menu_line_2 {
+  opacity: 0;
+  transform: rotate(45deg) translate(23%, 317%);
+}
+
+.menu_visible .menu_line_3 {
+  transform: rotate(-45deg) translate(23%, -317%);
+}
+
+.menu_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.menu_visible .menu_wrap {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.menu_item {
+  margin-bottom: 7vmin;
+  font-size: 5vmin;
+  color: #4B5D68;
+}
+
+.menu_item.active {
+  font-family: "Avenir-SemiBold";
+}
+
+@media (orientation: landscape) {
+  .header_wr_m {
+    width: 110vmin;
+  }
+}
+.footer_m {
+  position: relative;
+  width: 100%;
+  padding: 10vmin;
+  background-color: rgba(156, 105, 226, 0.1);
+}
+
+.footer_contact_wr {
+  margin-bottom: 3vmin;
+}
+
+.footer_contact_wr div,
+.footer_contact_wr a {
+  display: block;
+  font-size: 4vmin;
+  text-align: center;
+  line-height: 180%;
+  color: #212353;
+}
+
+.footer_bottom_social_wr {
+  margin-top: 5vmin;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.footer_social_link {
+  width: 12vmin;
+}
+
+.footer_social_link:not(:last-child) {
+  margin-right: 3vmin;
+}
+
+.footer_social_link img {
+  width: 100%;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  background-color: #F7FBFD;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.features_wrap_m {
+  position: relative;
+  width: 90vmin;
+  margin: 0 auto;
+  padding-top: 25vmin;
+}
+
+.features_title_m {
+  margin-bottom: 4vmin;
+  font-family: "Avenir-SemiBold";
+  font-size: 9vmin;
+}
+
+.features_txt_m {
+  margin-bottom: 18vmin;
+  line-height: 160%;
+  font-size: 4.2vmin;
+}
+
+.features_block_item_wr_m {
+  position: relative;
+  max-width: 95vmin;
+  margin: 0 auto;
+  margin-bottom: 12vmin;
+  padding: 0 8vmin 11vmin 10vmin;
+}
+
+.features_item_bg_m {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  pointer-events: none;
+}
+
+.features_item_bg_m img {
+  width: 100%;
+}
+
+.features_item_img_m {
+  width: 82%;
+  margin: 0 auto;
+  margin-bottom: 7vmin;
+}
+
+.features_item_img_m img {
+  width: 100%;
+  height: 100%;
+}
+
+.features_item_title_m {
+  margin-bottom: 5vmin;
+  font-size: 6vmin;
+}
+
+.features_item_txt_m {
+  margin-bottom: 7vmin;
+  font-size: 3.7vmin;
+  line-height: 160%;
+}
+
+.features_item_btn_wr_m {
+  display: flex;
+  align-items: center;
+}
+
+.features_item_btn_txt_m {
+  font-family: "Avenir-SemiBold";
+  font-size: 4vmin;
+}
+
+.features_item_btn_ico_m {
+  width: 6vmin;
+  margin-left: 2vmin;
+}
+
+@media (orientation: landscape) {
+  .features_wrap_m {
+    width: 110vmin;
+  }
+
+  .features_item_img_m {
+    width: 92%;
+  }
+}
+
+/*# sourceMappingURL=mobile_styles.css.map */

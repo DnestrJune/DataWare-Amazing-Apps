@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="433px" height="358px" viewBox="0 0 433 358" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Slice 1</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="feature_item_4_bg">
+            <path d="M44.1993,41.7281 C48.2396,17.6426 69.0883,0 93.51,0 L383,0 C410.614,0 433,22.3858 433,50 L433,307.489 C433,335.104 410.614,357.489 383,357.489 L50.3165,357.489 C19.3982,357.489 -4.10951,329.71 1.0056,299.218 L44.1993,41.7281 Z" id="Path" fill="#9C69E2" fill-rule="nonzero" opacity="0.1"></path>
+            <path d="M206.207,258.971 C178.176,227.205 211.274,196.533 269.529,195.705 C385.347,203.33 411.482,305.808 402.729,328.785 C393.976,351.761 367.913,352.388 329.296,305.582 C290.679,258.776 241.246,298.677 206.207,258.971 Z" id="Path" stroke="#FFFFFF" stroke-width="1.5"></path>
+        </g>
+    </g>
+</svg>

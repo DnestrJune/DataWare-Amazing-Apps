@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="434px" height="358px" viewBox="0 0 434 358" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Untitled 7</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="feature_item_2_bg">
+            <path d="M44.2095,41.7411 C48.245,17.6503 69.096,0.00153 93.522,0.00153 L383,0.00153 C410.614,0.00153 433,22.3873 433,50.0015 L433,308.002 C433,335.616 410.614,358.002 383,358.002 L50.3051,358.002 C19.3915,358.002 -4.11508,330.23 0.99207,299.741 L44.2095,41.7411 Z" id="Path" fill="#2D9CDB" fill-rule="nonzero" opacity="0.1"></path>
+            <ellipse id="Oval" stroke="#FFFFFF" stroke-width="1.49999994" transform="translate(373.421000, 306.032000) rotate(20.710903) translate(-373.421000, -306.032000) " cx="373.421" cy="306.032" rx="30.9105032" ry="18.2724967"></ellipse>
+            <path d="M99.617,247.712 C39.115,259.919 24.4984,195.795 65.8671,121.691 C159.814,-18.8767 308.188,22.8655 330.815,50.6612 C353.443,78.457 335.259,111.798 248.066,126.395 C160.873,140.991 175.245,232.454 99.617,247.712 Z" id="Path" stroke="#FFFFFF" stroke-width="1.5"></path>
+        </g>
+    </g>
+</svg>

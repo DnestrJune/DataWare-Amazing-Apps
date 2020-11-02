@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="335px" height="392px" viewBox="0 0 335 392" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Untitled 3</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="feature_item_mob_bg">
+            <path d="M0.0633423502,50.0634 C0.0283907,22.4244 22.4244,0 50.0633,0 L285,0 C312.614,0 335,22.3858 335,50 L335,342 C335,369.614 312.614,392 285,392 L50.433,392 C22.8435,392 0.468003,369.653 0.433073,342.063 L0.0633423502,50.0634 Z" id="Path" fill="#68C9BA" fill-rule="nonzero" opacity="0.1"></path>
+            <path d="M310.394,72.3008 C330.008,94.485 306.849,115.906 266.088,116.484 C185.05,111.158 166.764,39.5908 172.888,23.5447 C179.013,7.4987 197.249,7.0607 224.269,39.7487 C251.289,72.4366 285.878,44.5707 310.394,72.3008 Z" id="Path" stroke="#FFFFFF" stroke-width="1.5"></path>
+            <ellipse id="Oval" stroke="#FFFFFF" stroke-width="1.49999969" transform="translate(230.811000, 45.781900) rotate(20.758301) translate(-230.811000, -45.781900) " cx="230.811" cy="45.7819" rx="12.8411997" ry="7.57205711"></ellipse>
+        </g>
+    </g>
+</svg>

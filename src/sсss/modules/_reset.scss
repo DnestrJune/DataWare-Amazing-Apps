@@ -1,0 +1,71 @@
+html {
+    font-size: 10px;
+}
+body, html {
+    position: relative;
+    height:100%;
+    width:100%;
+    min-width: 1000px;
+    min-height: 550px;
+	  font-family: $regular;
+    color: $blue;
+}
+
+* {
+    box-sizing: border-box;
+    font-weight: normal;
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+}
+b {
+	font-weight: bold;;
+}
+img {
+  display: block;
+}
+input::-webkit-input-placeholder       {opacity: 1; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+textarea::-webkit-input-placeholder       {opacity: 1; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+textarea::-moz-placeholder                {opacity: 1; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+textarea:-moz-placeholder                 {opacity: 1; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+textarea:-ms-input-placeholder            {opacity: 1; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+textarea:focus::-webkit-input-placeholder {opacity: 0; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+textarea:focus::-moz-placeholder          {opacity: 0; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+textarea:focus:-moz-placeholder           {opacity: 0; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+textarea:focus:-ms-input-placeholder      {opacity: 0; color: $blue; font-size: 1.6rem; transition: opacity 0.3s ease;}
+
+#popupName,
+#popupEmail,
+#popupWeb,
+#popupTextLine,
+#popupTextLine2,
+#popupTextLine3,
+#searchField {
+    padding-left: 0.5rem;
+    font-size: 1.7rem;
+    color: $blue;
+    width: 100%;
+    border: none;
+    height: 4.3rem;
+    background: transparent;
+    resize: none;
+    transition: all .4s ease-out;
+}
+#popupTextLine,
+#popupTextLine2,
+#popupTextLine3 {
+  height: 4.1rem;
+}

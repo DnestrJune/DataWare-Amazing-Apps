@@ -1,0 +1,231 @@
+.header {
+  position: absolute;
+  top: 5rem;
+  width: 112rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.header_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_left {
+  display: flex;
+  align-items: center;
+}
+.header_logo {
+  width: 4.9rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header_logo_small_dot {
+  width: 2rem;
+  height: 2rem;
+
+  opacity: 0;
+  transform: translateX(-1rem);
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+}
+.run_animations .header_logo_small_dot {
+  opacity: 1;
+  transform: none;
+}
+
+.header_logo_big_dot {
+  width: 2rem;
+  height: 3.5rem;
+  margin-left: 0.9rem;
+
+  opacity: 0;
+  transform: translate(-3rem, 20%) scaleY(.5);
+  transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.1s;
+}
+.run_animations .header_logo_big_dot {
+  opacity: 1;
+  transform: none;
+}
+
+.header_content {
+  margin-left: 12.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.header_content_item {
+  position: relative;
+  margin-right: 4rem;
+  cursor: pointer;
+
+  font-size: 1.6rem;
+  color: $paleBlue;
+
+  opacity: 0;
+  transform: translateY(-3rem);
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+}
+.run_animations .header_content_item {
+  opacity: 1;
+  transform: none;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.2s;
+}
+.header_content_item:nth-child(2) {
+  transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.3s;
+}
+.header_content_item:nth-child(3) {
+  transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.4s;
+}
+.header_content_item:nth-child(4) {
+  transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.5s;
+}
+.header_content_item.active {
+  color: $blue;
+  pointer-events: none;
+}
+.header_content_item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-120%);
+  width: 100%;
+  height: 1px;
+  background: $paleBlue;
+  opacity: 0;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+}
+.header_content_item:hover::before {
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+.header_content_item span {
+  transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.1s;
+}
+.header_content_item.active span {
+  opacity: 0;
+}
+
+.header_content_item_bold {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+
+  font-family: $semiBold;
+  font-size: 1.6rem;
+  color: $paleBlue;
+
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.active .header_content_item_bold {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.header_seacrh_ico {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 4rem;
+  cursor: pointer;
+
+  opacity: 0;
+  transform: translateY(-3rem);
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+}
+.run_animations .header_seacrh_ico {
+  opacity: 1;
+  transform: none;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.6s;
+}
+.header_seacrh_ico img {
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+}
+.header_seacrh_ico:hover img,
+.header_seacrh_ico.cliked img {
+  transform: rotate(90deg);
+}
+.search_field {
+  position: absolute;
+  right: -1rem;
+  bottom: -0.5rem;
+  transform: translateX(100%);
+  width: 14rem;
+  height: 1px;
+  background: $violet;
+
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  opacity: 0;
+}
+.cliked .search_field {
+  opacity: 1;
+}
+.searchField {
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+}
+.header_popup_btn_wr {
+  width: 21rem;
+  height: 5.5rem;
+  padding: 0 2.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $white;
+  border-radius: 10rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  opacity: 0;
+  transform: translateX(-5rem);
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+}
+.run_animations .header_popup_btn_wr {
+  opacity: 1;
+  transform: none;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.7s;
+}
+.header_popup_btn_txt {
+  font-family: $semiBold;
+  font-size: 1.5rem;
+  color: #212353;
+}
+.header_popup_btn_ico {
+  width: 2rem;
+  height: 1.4rem;
+}
+.header_popup_btn_wr:hover .header_popup_btn_ico {
+  animation: 2s arrow_move infinite;
+}
+@keyframes arrow_move {
+  0% { transform: translateX(0)};
+  20% { transform: translateX(90%)};
+  40% { transform: translateX(50%)};
+  60% { transform: translateX(90%)};
+  80% { transform: translateX(0)};
+}
+.header_popup_btn_ico img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1680px) {
+    html {
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 1350px) {
+    html {
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 1280px) {
+  .header {
+    width: 100rem;
+  }
+}

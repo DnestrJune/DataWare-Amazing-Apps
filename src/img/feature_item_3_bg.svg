@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="434px" height="358px" viewBox="0 0 434 358" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Untitled 8</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="feature_item_3_bg">
+            <path d="M44.2899,41.7354 C48.3272,17.6465 69.1773,0 93.602,0 L383.285,0 C410.899,0 433.285,22.3858 433.285,50 L433.285,308 C433.285,335.614 410.899,358 383.285,358 L50.3619,358 C19.4466,358 -4.06038,330.225 1.0497,299.735 L44.2899,41.7354 Z" id="Path" fill="#F063B8" fill-rule="nonzero" opacity="0.1"></path>
+            <ellipse id="Oval" stroke="#FFFFFF" stroke-width="1.5" transform="translate(370.807000, 56.427000) rotate(150.000000) translate(-370.807000, -56.427000) " cx="370.807" cy="56.427" rx="34.0274" ry="20.1071"></ellipse>
+        </g>
+    </g>
+</svg>
