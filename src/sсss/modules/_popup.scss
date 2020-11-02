@@ -10,11 +10,13 @@
   pointer-events: none;
   opacity: 0;
   transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  &.visible {
+    pointer-events: all;
+    opacity: 1;
+  }
 }
-.popup_wrap.visible {
-  pointer-events: all;
-  opacity: 1;
-}
+
 .popup_bg {
   position: absolute;
   top: 0;
@@ -24,6 +26,7 @@
   background-color: $violet;
   opacity: .8;
 }
+
 .popup_wr {
   position: relative;
   width: 112rem;
@@ -35,6 +38,7 @@
   border-radius: 5rem;
   overflow: hidden;
 }
+
 .popup_lines_bg_wr {
   position: absolute;
   top: 50%;
@@ -43,15 +47,15 @@
   width: 100%;
   height: 100%;
 }
+
 .popup_line_bg {
   width: 300%;
   height: 1rem;
-  // margin: 3.6rem 0;
   margin: 4.25rem 0;
   background-color: $popupLines;
-  // transform: rotate(-54deg) translate(-38rem, -119.5rem);
   transform: rotate(-54deg) translate(-38rem, -133.5rem);
 }
+
 .popup_cont_wr {
   position: absolute;
   top: 3rem;
@@ -62,6 +66,7 @@
   background: $white;
   border-radius: 4.5rem;
 }
+
 .popup_cont_title {
   margin-bottom: 6.5rem;
 
@@ -69,6 +74,7 @@
   font-size: 4rem;
   text-align: center;
 }
+
 .popup_cont_form {
   margin-bottom: 3.1rem;
   display: flex;
@@ -78,36 +84,40 @@
   width: 100%;
   display: flex;
 }
+
 .popup_form_half {
   width: 50%;
 }
+
 .popup_input {
   position: relative;
   margin-bottom: 4rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    height: 2px;
+    background: rgba(156, 105, 226, 0.2);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    height: 3px;
+    background: coral;
+    opacity: 0;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  &.important_input::after {
+    opacity: 1;
+  }
 }
-.popup_input::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 95%;
-  height: 2px;
-  background: rgba(156, 105, 226, 0.2);
-}
-.popup_input::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 95%;
-  height: 3px;
-  background: coral;
-  opacity: 0;
-  transition: all 0.9s cubic-bezier(.19,1,.22,1);
-}
-.important_input.popup_input::after {
-  opacity: 1;
-}
+
 .popup_correct_email {
   position: absolute;
   bottom: 3rem;
@@ -117,10 +127,12 @@
 
   opacity: 0;
   transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  & .popup_correct_email {
+    opacity: 1;
+  }
 }
-.correct_email .popup_correct_email {
-  opacity: 1;
-}
+
 .popup_send_btn_wr {
   width: 100%;
   display: flex;
@@ -128,16 +140,7 @@
 }
 
 
-@media screen and (max-width: 1680px) {
-    html {
-        font-size: 9px;
-    }
-}
-@media screen and (max-width: 1350px) {
-    html {
-        font-size: 8px;
-    }
-}
+
 @media screen and (max-width: 1280px) {
   .popup_wr {
     width: 100rem;

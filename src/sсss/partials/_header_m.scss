@@ -5,6 +5,7 @@
   width: 100%;
   z-index: 1;
 }
+
 .header_wr_m {
   width: 87vmin;
   margin: 0 auto;
@@ -12,24 +13,29 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .header_log_m {
   width: 9vmin;
   height: 7vmin;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
 }
-.header_log_m img {
-  width: 100%;
-  height: 100%;
-}
+
 .header_right_search_m {
   position: relative;
   width: 20px;
   height: 20px;
   margin-right: 27px;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
 }
-.header_right_search_m svg {
-  width: 100%;
-  height: 100%;
-}
+
 .search_field_wr_m {
   position: absolute;
   left: -2vmin;
@@ -41,10 +47,12 @@
 
   transition: all 0.9s cubic-bezier(.19,1,.22,1);
   opacity: 0;
+
+  .cliked & {
+    opacity: 1;
+  }
 }
-.cliked .search_field_wr_m {
-  opacity: 1;
-}
+
 .search_field_m {
   position: absolute;
   bottom: -5vmin;
@@ -53,35 +61,36 @@
   font-size: 4vmin;
 }
 
-.header_right_menu_m {
-  width: 28px;
-  height: 20px;
-  z-index: 1;
-}
 .header_right_wr_m {
   display: flex;
 }
 
 .header_right_menu_m {
+  width: 28px;
+  height: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 1;
 }
+
 .menu_line {
   width: 100%;
   height: 2px;
   background: $violet;
   transition: all 0.9s cubic-bezier(.19,1,.22,1);
 }
-.menu_visible .menu_line_1 {
-  transform: rotate(45deg) translate(23%, 317%);
-}
-.menu_visible .menu_line_2 {
-  opacity: 0;
-  transform: rotate(45deg) translate(23%, 317%);
-}
-.menu_visible .menu_line_3 {
-  transform: rotate(-45deg) translate(23%, -317%);
+.menu_visible {
+  & .menu_line_1 {
+   transform: rotate(45deg) translate(23%, 317%);
+ }
+ & .menu_line_2 {
+   opacity: 0;
+   transform: rotate(45deg) translate(23%, 317%);
+ }
+ & .menu_line_3 {
+   transform: rotate(-45deg) translate(23%, -317%);
+ }
 }
 
 .menu_wrap {
@@ -99,19 +108,22 @@
 
   opacity: 0;
   transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  .menu_visible & {
+    pointer-events: all;
+    opacity: 1;
+  }
 }
-.menu_visible .menu_wrap {
-  pointer-events: all;
-  opacity: 1;
-}
+
 .menu_item {
   margin-bottom: 7vmin;
 
   font-size: 5vmin;
   color: $paleBlue;
-}
-.menu_item.active {
-  font-family: $semiBold;
+
+  &.active {
+    font-family: $semiBold;
+  }
 }
 
 @media (orientation: landscape) {

@@ -69,3 +69,16 @@ textarea:focus:-ms-input-placeholder      {opacity: 0; color: $blue; font-size: 
 #popupTextLine3 {
   height: 4.1rem;
 }
+
+
+
+@media screen and (max-width: 1680px), (max-height: 800px) {
+    html {
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 1350px), (max-height: 700px) {
+    html {
+        font-size: 8px;
+    }
+}
