@@ -71,10 +71,8 @@ jQuery(document).ready(function ($) {
 		var email = $('#popupEmail').val();
     var web = $('#popupWeb').val();
 
-    var emailValidation = new RegExp('^[@]$');
 
-
-		if (name != '' && email && emailValidation.test(email) !='' && web != '') {
+		if (name != '' && email !='' && web != '') {
       $('body').removeClass('noscroll');
       $('.popup_wrap').removeClass('visible');
       setTimeout(function(){
@@ -92,13 +90,6 @@ jQuery(document).ready(function ($) {
 				$('#popupEmail').parent('.popup_input').addClass('important_input');
 				setTimeout(function(){
 					$('.popup_input').removeClass('important_input');
-				}, 1500);
-			}
-			if(email != '' && !emailValidation.test(email)){
-        console.log("Введите корректный email");
-				$('#popupEmail').parent('.popup_input').addClass('important_input correct_email');
-				setTimeout(function(){
-					$('.popup_input').removeClass('important_input correct_email');
 				}, 1500);
 			}
 

@@ -946,6 +946,7 @@ body {
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  z-index: 10;
   opacity: 0;
   transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -1057,6 +1058,7 @@ body {
   position: absolute;
   bottom: 3rem;
   left: 10rem;
+  pointer-events: none;
   font-size: 1.6rem;
   color: lightcoral;
   opacity: 0;
