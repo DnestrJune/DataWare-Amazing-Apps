@@ -128,7 +128,7 @@
   opacity: 0;
   transition: all 0.9s cubic-bezier(.19,1,.22,1);
 
-  & .popup_correct_email {
+  .correct_email & {
     opacity: 1;
   }
 }
